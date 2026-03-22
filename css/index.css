@@ -1,45 +1,132 @@
-@import url('https://fonts.googleapis.com/css2?family=Sora:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@500&display=swap');
+
+@import url('navbar.css');
+@import url('header.css');
+
+/* Variables */
 
 :root {
-    --primary-color: #72BDA3;
-    --primary-color-2: #5E8C61;
-    --secondary-color: #94E8B4;
-    --background-color: #4E6151;
-    --background-color-2: #3B322C; 
-    --text-color: #fff;
+    --color-primary: #72BDA3;
+    --color-primary-strong: #5E8C61;
+    --color-accent: #94E8B4;
+
+    --surface-card: #4E6151;
+    --surface-bg: #3B322C;
+    --surface-muted: rgba(255,255,255,0.1);
+
+    --text-primary: #ffffff;
+    --text-secondary: rgba(255,255,255,0.7);
+    --text-muted: rgba(255,255,255,0.5);
+
+    --shadow-sm: 0 4px 10px rgba(0,0,0,0.2);
+    --shadow-md: 0 10px 25px rgba(0,0,0,0.25);
+    --shadow-lg: 0 20px 50px rgba(0,0,0,0.3);
+
+    --border-subtle: rgba(255,255,255,0.15);
+    --border-strong: rgba(255,255,255,0.3);
+}
+
+:root:has(#theme-toggle:checked) {
+    --primary-color: #4FAF8F;
+    --primary-color-2: #3E8F73;
+    --color-accent: #2FA36B;
+
+    --surface-card: #F4F8F6;
+    --surface-bg: #FFFFFF;
+    --surface-muted: rgba(0,0,0,0.05);
+
+    --text-primary: #1F2A24;
+    --text-secondary: rgba(0,0,0,0.7);
+    --text-muted: rgba(0,0,0,0.5);
+
+    --shadow-sm: 0 4px 10px rgba(0,0,0,0.08);
+    --shadow-md: 0 10px 25px rgba(0,0,0,0.12);
+    --shadow-lg: 0 20px 50px rgba(0,0,0,0.15);
+
+    --border-subtle: rgba(0,0,0,0.08);
+    --border-strong: rgba(0,0,0,0.15);
+}
+
+.sora-font {
+  font-family: "Sora", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
 }
 
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: var(--background-color);
+    font-family: 'Inter', sans-serif;
+    background-color: var(--surface-bg);
     color: var(--text-color);
     margin: 0;
     padding: 0;
 }
 
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    text-align: center;
-    gap: 0;
-}
-
-h1 {
-    font-size: 6em;
-    margin: 0.5em 0;
-    color: var(--primary-color);
-    font-family: "Sora", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 600;
-    font-style: normal;
+ul {
+    list-style: none;
+    padding: 0;
     margin: 0;
 }
 
-p {
-    font-size: 1.5em;
-    margin: 0.5em 0;
-    color: var(--text-color);
+footer {
+    background-color: var(--surface-card);
+    color: var(--text-primary);
+    text-align: center;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.theme-toggle {
+    position: relative;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+}
+
+.theme-toggle input {
+    display: none;
+}
+.icon {
+    position: absolute;
+    inset: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: var(--text-primary);
+    transition: 
+        transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+        opacity 0.2s ease;
+}
+
+.icon img {
+    width: clamp(16px, 4vw, 24px);
+    height: clamp(16px, 4vw, 24px);
+}
+
+.moon {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.sun {
+    opacity: 0;
+    transform: scale(0.6);
+}
+
+.theme-toggle input:checked ~ .sun {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.theme-toggle input:checked ~ .moon {
+    opacity: 0;
+    transform: scale(0.6);
+}
+
+.theme-toggle:hover .icon {
+    transform: scale(1.1);
 }

@@ -1,17 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nicolás Fenoglio - Estudiante de Ingenieria en Sistemas</title>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Nicolás Fenoglio - Ingenieria en Sistemas de la Información</title>
 
-    <link rel="stylesheet" href="css/index.css">
-</head>
-<body>
-    <main>
-        <p>Estudiante de Ingenieria en Sistemas</p>
-        <h1>Nicolás Fenoglio</h1>
-        <p>Portafolio en desarrollo</p>
-    </main>
-</body>
+        <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+        <link rel="stylesheet" href="./css/index.css">
+    </head>
+    <body>
+        <nav>
+            <h1 class="sora-font"><a href="">nicofeno.dev</a></h1>
+            <ul>
+                <li><a href="#about-me">Sobre mí</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#projects">Proyectos</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+        <header>
+            <article>
+                <span class="greeting">¡Hola!</span>
+                <h1>Mi nombre es <span>Nicolás Fenoglio</span></h1>
+                <span class="job-title">Full Stack Developer</span>
+                <p>Desarrollo sistemas y aplicaciones fullstack con foco en arquitectura, rendimiento y eficiencia.</p>
+                <div class="cta-container">
+                    <a href="/cv.pdf" download class="btn-primary">
+                        Descargar CV
+                    </a>
+
+                    <div class="social-buttons">
+                        <a href="https://github.com/tuusuario" target="_blank" class="icon-btn">
+                            <img src="assets/social/github.svg" alt="GitHub">
+                        </a>
+                        <a href="https://linkedin.com/in/tuusuario" target="_blank" class="icon-btn">
+                            <img src="assets/social/linkedin.svg" alt="LinkedIn">
+                        </a>
+                    </div>
+                </div>
+            </article>
+            <div class="profile-container">
+                <img src="assets/profile.jpg" class="profile-pic" alt="Foto de perfil" />
+                <div class="tooltip">
+                    Foto de 
+                    <a href="https://unsplash.com/es/@esteban__chinchilla" target="_blank">
+                        Esteban Chinchilla
+                    </a> 
+                    en 
+                    <a href="https://unsplash.com/es/fotos/gato-de-pelaje-largo-blanco-y-marron-9m1OFDFAuss" target="_blank">
+                        Unsplash
+                    </a>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <span class="arrow"></span>
+            </div>
+        </header>
+        <footer>
+            <p>&copy; 2026 Nicolás Fenoglio. Diseñado y desarrollado por mí. Recursos de terceros utilizados bajo licencia.</p>
+            <label class="theme-toggle">
+                <input type="checkbox" id="theme-toggle">
+                <span class="icon sun"><img src="./assets/theme/sun.svg" alt="Light Theme"></span>
+                <span class="icon moon"><img src="./assets/theme/moon.svg" alt="Dark Theme"></span>
+            </label>
+        </footer>
+    </body>
 </html>
