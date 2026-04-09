@@ -654,6 +654,7 @@ main {
 .contact-list a {
   display: flex;
   align-items: center;
+  width: fit-content;
   gap: 10px;
 
   text-decoration: none;
