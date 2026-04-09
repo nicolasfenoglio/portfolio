@@ -1,0 +1,98 @@
+nav {
+    background-color: var(--surface-card);
+    padding: clamp(8px, 1vw, 20px) clamp(10px, 3vw, 40px);    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-height: 5vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+nav h1 {
+    margin: 0;
+    font-size: clamp(1rem, 2vw, 1.5rem);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav a {
+    color: var(--text-primary);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul a:hover {
+    color: var(--color-accent);
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+    width: 25px;
+    height: 3px;
+    background: var(--text-primary);
+    position: relative;
+    cursor: pointer;
+}
+
+.menu-icon::before,
+.menu-icon::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: var(--text-primary);
+    left: 0;
+}
+
+.menu-icon::before {
+    top: -8px;
+}
+
+.menu-icon::after {
+    top: 8px;
+}
+
+@media (max-width: 768px) {
+    .menu-icon {
+        display: flex;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 100%;
+        flex-direction: column;
+        background: white;
+
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+    }
+
+    #menu-toggle:checked ~ .nav-links {
+        max-height: 30vh;
+        background-color: var(--surface-card);
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}

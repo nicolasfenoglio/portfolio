@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg: #0f172a;
+  --card: #111827;
+  --accent: #3b82f6;
+  --text: #e5e7eb;
+  --subtext: #9ca3af;
+}
+
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  min-height: 100vh;
+}
+
+.sidebar {
+  background: var(--card);
+  padding: 2rem;
+  text-align: center;
+  border-right: 1px solid #1f2937;
+}
+
+.profile-img {
+  width: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.sidebar h1 {
+  font-size: 1.5rem;
+}
+
+.role {
+  color: var(--accent);
+  margin-bottom: 1rem;
+}
+
+.about {
+  font-size: 0.9rem;
+  color: var(--subtext);
+}
+
+.content {
+  padding: 2rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+section h2 {
+  font-size: 1.2rem;
+  color: var(--accent);
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #1f2937;
+  padding-bottom: 0.5rem;
+}
+
+.item {
+  margin-bottom: 1.2rem;
+}
+
+.item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item-header h3 {
+  font-size: 1rem;
+}
+
+.item-header span {
+  font-size: 0.8rem;
+  color: var(--subtext);
+}
+
+.place {
+  color: var(--subtext);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    border-right: none;
+    border-bottom: 1px solid #1f2937;
+  }
+
+  .content {
+    padding: 1.5rem;
+  }
+}
