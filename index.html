@@ -1,270 +1,453 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Nicolás Fenoglio - Desarrollador Full Stack</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nicolás Fenoglio - Desarrollador Full Stack</title>
 
-        <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
-        <link rel="stylesheet" href="./css/index.css">
+    <link
+      rel="stylesheet"
+      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+    />
+    <link rel="stylesheet" href="./css/index.css" />
 
-        <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
-        <link rel="manifest" href="/site.webmanifest">
-    </head>
-    <body>
-        <nav>
-            <label for="menu-toggle" class="menu-icon"></label>
-            <input type="checkbox" id="menu-toggle">
-            <h1 class="sora-font"><a href="">nicofeno.dev</a></h1>
-            <ul class="nav-links">
-                <li><a href="#about">Sobre mí</a></li>
-                <li><a href="#projects">Proyectos</a></li>
-                <li><a href="#skills">Habilidades</a></li>
-                <li><a href="#experience">Experiencia</a></li>
-                <li><a href="#contact">Contacto</a></li>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+  </head>
+  <body>
+    <nav>
+      <label for="menu-toggle" class="menu-icon"></label>
+      <input type="checkbox" id="menu-toggle" />
+      <h1 class="sora-font"><a href="">nicofeno.dev</a></h1>
+      <ul class="nav-links">
+        <li><a href="#about">Sobre mí</a></li>
+        <li><a href="#projects">Proyectos</a></li>
+        <li><a href="#skills">Habilidades</a></li>
+        <li><a href="#experience">Experiencia</a></li>
+        <li><a href="#contact">Contacto</a></li>
+      </ul>
+    </nav>
+    <header>
+      <article>
+        <span class="greeting">¡Hola!</span>
+        <h1>Mi nombre es <span>Nicolás Fenoglio</span></h1>
+        <span class="job-title">Desarrollador Full Stack</span>
+        <p>
+          Construyo software robusto y escalable, desde APIs y servidores hasta
+          interfaces web, con foco en soluciones que funcionan bien en
+          producción.
+        </p>
+        <div class="cta-container">
+          <a href="/resume.html" class="btn-primary"> Abrir Curriculum </a>
+
+          <div class="social-buttons">
+            <a
+              href="https://github.com/nicolasfenoglio"
+              target="_blank"
+              class="icon-btn"
+            >
+              <img src="assets/social/github.svg" alt="GitHub" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/nicofeno/"
+              target="_blank"
+              class="icon-btn"
+            >
+              <img src="assets/social/linkedin.svg" alt="LinkedIn" />
+            </a>
+          </div>
+        </div>
+      </article>
+      <div class="profile-container">
+        <img
+          src="assets/profile.jpg"
+          class="profile-pic"
+          alt="Foto de perfil"
+        />
+        <div class="tooltip">
+          Foto de
+          <a
+            href="https://unsplash.com/es/@esteban__chinchilla"
+            target="_blank"
+          >
+            Esteban Chinchilla
+          </a>
+          en
+          <a
+            href="https://unsplash.com/es/fotos/gato-de-pelaje-largo-blanco-y-marron-9m1OFDFAuss"
+            target="_blank"
+          >
+            Unsplash
+          </a>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <span class="arrow"></span>
+      </div>
+    </header>
+    <main>
+      <section class="about" id="about">
+        <div class="about-layout">
+          <div class="about-background">
+            <img
+              src="assets/about-me.jpg"
+              class="about-bg-img"
+              alt="Foto de perfil"
+            />
+            <div class="about-tooltip">
+              Foto de
+              <a
+                href="https://unsplash.com/es/@esteban__chinchilla"
+                target="_blank"
+              >
+                Esteban Chinchilla
+              </a>
+              en
+              <a
+                href="https://unsplash.com/es/fotos/gato-atigrado-blanco-y-negro-3jekQq3b1yU"
+                target="_blank"
+              >
+                Unsplash
+              </a>
+            </div>
+          </div>
+          <div class="about-card">
+            <h2 class="about-title">Sobre mí</h2>
+            <div class="about-content">
+              <p>
+                Soy desarrollador full stack con orientación a backend,
+                actualmente cursando Ingeniería en Sistemas de la Información.
+                Empecé a programar de forma autodidacta, motivado por entender
+                cómo funcionan por dentro los sistemas que usaba todos los días.
+              </p>
+              <p>
+                Con el tiempo pasé de la curiosidad a la práctica: trabajé en
+                proyectos individuales y en equipo, construyendo soluciones
+                reales donde aprendí a priorizar código claro, arquitecturas
+                escalables y buenas prácticas desde el primer commit.
+              </p>
+              <p>
+                Hoy estoy buscando mi primera experiencia profesional en el
+                sector IT. Quiero sumarme a un equipo donde pueda enfrentar
+                problemas reales, seguir creciendo y aportar desde lo técnico
+                desde el primer día.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="projects" id="projects">
+        <h2 class="projects-title">Proyectos</h2>
+        <div class="projects-container">
+          <article class="project">
+            <img
+              src="assets/projects/atenea.png"
+              alt="Atenea Server"
+              class="project-image"
+            />
+            <h3 class="project-title">Atenea</h3>
+            <span class="project-role">Servidor REST</span>
+            <p class="project-description">
+              API REST para la gestión de usuarios, sensores y plazas de
+              estacionamiento en tiempo real. Expone endpoints de administración
+              y consulta, incorpora WebSockets para notificar cambios de estado
+              a los clientes e integra RabbitMQ para consumir eventos de
+              sistemas externos de forma asincrónica.
+            </p>
+            <h4 class="project-subtitle">Tecnologias:</h4>
+            <ul class="project-tecnologies">
+              <li><img src="assets/skills/java.svg" alt="Java" /></li>
+              <li><img src="assets/skills/spring.svg" alt="Spring" /></li>
+              <li>
+                <img src="assets/skills/postgresql.svg" alt="PostgreSQL" />
+              </li>
+              <li><img src="assets/skills/docker.svg" alt="Docker" /></li>
             </ul>
-        </nav>
-        <header>
-            <article>
-                <span class="greeting">¡Hola!</span>
-                <h1>Mi nombre es <span>Nicolás Fenoglio</span></h1>
-                <span class="job-title">Desarrollador Full Stack</span>
-                <p>Desarrollo sistemas y aplicaciones con foco en arquitectura, rendimiento y eficiencia.</p>
-                <div class="cta-container">
-                    <a href="/resume.html" class="btn-primary">
-                        Abrir Curriculum
-                    </a>
+            <div class="project-actions">
+              <a
+                href="https://github.com/G2CdD2025UTNFRSanFrancisco/atenea"
+                target="_blank"
+                class="project-link"
+              >
+                Ver repositorio
+              </a>
+            </div>
+          </article>
+          <article class="project">
+            <img
+              src="assets/projects/iris.png"
+              alt="Iris Web"
+              class="project-image"
+            />
+            <h3 class="project-title">Iris</h3>
+            <span class="project-role">Aplicación Web</span>
+            <p class="project-description">
+              Aplicación web para la visualización y administración de datos en
+              tiempo real. Incluye un mapa interactivo que refleja el estado de
+              entidades dinámicas y un panel de administración completo. Combina
+              REST para operaciones síncronas con WebSockets para
+              actualizaciones continuas, logrando una interfaz reactiva y
+              consistente.
+            </p>
+            <h4 class="project-subtitle">Tecnologias:</h4>
+            <ul class="project-tecnologies">
+              <li><img src="assets/skills/react.svg" alt="React" /></li>
+              <li><img src="assets/skills/nodejs.svg" alt="Node.js" /></li>
+              <li><img src="assets/skills/vite.svg" alt="Vite" /></li>
+              <li><img src="assets/skills/html5.svg" alt="HTML" /></li>
+              <li><img src="assets/skills/css.svg" alt="CSS" /></li>
+              <li>
+                <img src="assets/skills/javascript.svg" alt="JavaScript" />
+              </li>
+            </ul>
+            <div class="project-actions">
+              <a
+                href="https://github.com/G2CdD2025UTNFRSanFrancisco/iris"
+                target="_blank"
+                class="project-link"
+              >
+                Ver repositorio
+              </a>
+            </div>
+          </article>
+          <article class="project">
+            <img
+              src="assets/projects/hermes.png"
+              alt="Hermes Server"
+              class="project-image"
+            />
+            <h3 class="project-title">Hermes</h3>
+            <span class="project-role">Servidor UDP</span>
+            <p class="project-description">
+              Servidor UDP para recepción y procesamiento de datos desde
+              dispositivos externos. Implementa un protocolo binario propio
+              optimizado para minimizar overhead y latencia, encargándose del
+              parseo de paquetes, validación y publicación de eventos hacia
+              RabbitMQ para su procesamiento posterior.
+            </p>
+            <h4 class="project-subtitle">Tecnologias:</h4>
+            <ul class="project-tecnologies">
+              <li><img src="assets/skills/golang.svg" alt="Golang" /></li>
+            </ul>
+            <div class="project-actions">
+              <a
+                href="https://github.com/G2CdD2025UTNFRSanFrancisco/hermes"
+                target="_blank"
+                class="project-link"
+              >
+                Ver repositorio
+              </a>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section class="skills">
+        <h2 id="skills">Habilidades</h2>
+        <ul>
+          <li data-name="Java">
+            <img src="assets/skills/java.svg" alt="Java" />
+          </li>
+          <li data-name="Golang">
+            <img src="assets/skills/golang.svg" alt="Golang" />
+          </li>
+          <li data-name="HTML">
+            <img src="assets/skills/html5.svg" alt="HTML" />
+          </li>
+          <li data-name="CSS"><img src="assets/skills/css.svg" alt="CSS" /></li>
+          <li data-name="JavaScript">
+            <img src="assets/skills/javascript.svg" alt="JavaScript" />
+          </li>
+          <li data-name="React">
+            <img src="assets/skills/react.svg" alt="React" />
+          </li>
+          <li data-name="Vite">
+            <img src="assets/skills/vite.svg" alt="Vite" />
+          </li>
+          <li data-name="Node.js">
+            <img src="assets/skills/nodejs.svg" alt="Node.js" />
+          </li>
+          <li data-name="PostgreSQL">
+            <img src="assets/skills/postgresql.svg" alt="PostgreSQL" />
+          </li>
+          <li data-name="MongoDB">
+            <img src="assets/skills/mongodb.svg" alt="MongoDB" />
+          </li>
+          <li data-name="Docker">
+            <img src="assets/skills/docker.svg" alt="Docker" />
+          </li>
+          <li data-name="Git"><img src="assets/skills/git.svg" alt="Git" /></li>
+          <li data-name="JWT"><img src="assets/skills/jwt.svg" alt="JWT" /></li>
+          <li data-name="Spring">
+            <img src="assets/skills/spring.svg" alt="Spring" />
+          </li>
+          <!-- Duplicado -->
+          <li data-name="Java">
+            <img src="assets/skills/java.svg" alt="Java" />
+          </li>
+          <li data-name="Golang">
+            <img src="assets/skills/golang.svg" alt="Golang" />
+          </li>
+          <li data-name="HTML">
+            <img src="assets/skills/html5.svg" alt="HTML" />
+          </li>
+          <li data-name="CSS"><img src="assets/skills/css.svg" alt="CSS" /></li>
+          <li data-name="JavaScript">
+            <img src="assets/skills/javascript.svg" alt="JavaScript" />
+          </li>
+          <li data-name="React">
+            <img src="assets/skills/react.svg" alt="React" />
+          </li>
+          <li data-name="Node.js">
+            <img src="assets/skills/nodejs.svg" alt="Node.js" />
+          </li>
+          <li data-name="PostgreSQL">
+            <img src="assets/skills/postgresql.svg" alt="PostgreSQL" />
+          </li>
+          <li data-name="MongoDB">
+            <img src="assets/skills/mongodb.svg" alt="MongoDB" />
+          </li>
+          <li data-name="Docker">
+            <img src="assets/skills/docker.svg" alt="Docker" />
+          </li>
+          <li data-name="Git"><img src="assets/skills/git.svg" alt="Git" /></li>
+          <li data-name="JWT"><img src="assets/skills/jwt.svg" alt="JWT" /></li>
+          <li data-name="Spring">
+            <img src="assets/skills/spring.svg" alt="Spring" />
+          </li>
+        </ul>
+      </section>
+      <section class="experience" id="experience">
+        <h2>Experiencia</h2>
+        <article class="experience-card">
+          <div class="experience-layout">
+            <div class="experience-meta">
+              <h3>Estudiante Investigador Grupo I+D+I Calidad de Software</h3>
+              <span class="job-duration">Agosto 2025 - Presente</span>
+            </div>
+            <div class="experience-content">
+              <p>
+                Formo parte del Grupo I+D+I en Calidad de Software de la UTN
+                F.R. San Francisco. Me especialicé en el modelo de calidad ISO
+                25000, participando en la redacción de historias de usuario y la
+                definición de requisitos no funcionales. También trabajé en
+                investigaciones sobre el uso de LLMs para asistir en la
+                especificación de requisitos de calidad de software.
+              </p>
+            </div>
+          </div>
+        </article>
+        <article class="experience-card">
+          <div class="experience-layout">
+            <div class="experience-meta">
+              <h3>Desarrollador Full Stack Independiente</h3>
+              <span class="job-duration">2018 - Presente</span>
+            </div>
+            <div class="experience-content">
+              <p>
+                Trabajé en una variedad de proyectos personales y colaborativos.
+                Entre ellos, el frontend de una aplicación de comunidades para
+                gestión de proyectos (inspirada en Discord y Trello), plugins en
+                Java para servidores con integración de MongoDB, Redis y Docker
+                que llegaron a producción, y múltiples aplicaciones web
+                desarrollando tanto frontend como backend. La mayoría son
+                proyectos privados, pero en conjunto representan años de
+                experiencia práctica construyendo software real.
+              </p>
+            </div>
+          </div>
+        </article>
+      </section>
+      <section id="contact" class="contact">
+        <div class="contact-card">
+          <div class="contact-layout">
+            <div class="contact-info">
+              <div class="contact-inner">
+                <h2>Contacto</h2>
+                <p>
+                  Si tenés un proyecto interesante, una oportunidad laboral o
+                  simplemente querés charlar sobre tecnología, escribime.
+                  Respondo siempre.
+                </p>
 
-                    <div class="social-buttons">
-                        <a href="https://github.com/nicolasfenoglio" target="_blank" class="icon-btn">
-                            <img src="assets/social/github.svg" alt="GitHub">
-                        </a>
-                        <a href="https://www.linkedin.com/in/nicofeno/" target="_blank" class="icon-btn">
-                            <img src="assets/social/linkedin.svg" alt="LinkedIn">
-                        </a>
-                    </div>
-                </div>
-            </article>
-            <div class="profile-container">
-                <img src="assets/profile.jpg" class="profile-pic" alt="Foto de perfil" />
-                <div class="tooltip">
-                    Foto de 
-                    <a href="https://unsplash.com/es/@esteban__chinchilla" target="_blank">
-                        Esteban Chinchilla
-                    </a> 
-                    en 
-                    <a href="https://unsplash.com/es/fotos/gato-de-pelaje-largo-blanco-y-marron-9m1OFDFAuss" target="_blank">
-                        Unsplash
+                <ul class="contact-list">
+                  <li>
+                    <a
+                      href="https://www.linkedin.com/in/nicofeno/"
+                      target="_blank"
+                    >
+                      <img src="./assets/social/linkedin.svg" alt="" /> LinkedIn
                     </a>
-                </div>
-            </div>
-            <div class="scroll-indicator">
-                <span class="arrow"></span>
-            </div>
-        </header>
-        <main>
-            <section class="about" id="about">
-                <div class="about-layout">
-                    <div class="about-background">
-                    <img 
-                        src="assets/about-me.jpg" 
-                        class="about-bg-img" 
-                        alt="Foto de perfil"
-                    />
-                    <div class="about-tooltip">
-                        Foto de 
-                        <a href="https://unsplash.com/es/@esteban__chinchilla" target="_blank">
-                        Esteban Chinchilla
-                        </a> 
-                        en 
-                        <a href="https://unsplash.com/es/fotos/gato-atigrado-blanco-y-negro-3jekQq3b1yU" target="_blank">
-                        Unsplash
-                        </a>
-                    </div>
-                    </div>
-                    <div class="about-card">
-                        <h2 class="about-title">Sobre mí</h2>
-                        <div class="about-content">
-                            <p>Soy estudiante de Ingeniería en Sistemas de la Información y desarrollador full stack, con foco en backend. Empecé a programar de forma autodidacta, impulsado por la curiosidad de comprender el funcionamiento de los sistemas y el software que utilizaba a diario.</p>
-                            <p>Desde entonces, trabajé en proyectos tanto individuales como en equipo, donde desarrollé experiencia construyendo soluciones, priorizando código claro, escalabilidad y buenas prácticas.</p>
-                            <p>Actualmente, estoy buscando mi primera experiencia profesional en el sector IT, con ganas de sumarme a un equipo donde pueda seguir aprendiendo, enfrentar desafíos reales y aportar valor desde lo técnico. Siempre buscando aprender y crecer profesionalmente.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="projects" id="projects">
-                <h2 class="projects-title">Proyectos</h2>
-                <div class="projects-container">
-                    <article class="project">
-                        <img src="assets/projects/atenea.png" alt="Atenea Server" class="project-image">
-                        <h3 class="project-title">Atenea</h3>
-                        <span class="project-role">Servidor REST</span>
-                        <p class="project-description">Atenea es una API REST desarrollada para la gestión de usuarios, sensores y plazas de estacionamiento. Implementa la lógica de negocio del dominio y expone endpoints para operaciones de administración y consulta. Además, incorpora comunicación en tiempo real mediante WebSockets para notificar cambios de estado a los clientes, e integra mensajería asincrónica con RabbitMQ para consumir eventos provenientes de sistemas externos.</p>
-                        <h4 class="project-subtitle">Tecnologias: </h4>
-                        <ul class="project-tecnologies">
-                            <li><img src="assets/skills/java.svg" alt="Java"></li>
-                            <li><img src="assets/skills/spring.svg" alt="Spring"></li>
-                            <li><img src="assets/skills/postgresql.svg" alt="PostgreSQL"></li>
-                            <li><img src="assets/skills/docker.svg" alt="Docker"></li>
-                        </ul>
-                        <div class="project-actions">
-                            <a href="https://github.com/G2CdD2025UTNFRSanFrancisco/atenea" target="_blank" class="project-link">
-                                Ver repositorio
-                            </a>
-                        </div>
-                    </article>
-                    <article class="project">
-                        <img src="assets/projects/iris.png" alt="Iris Web" class="project-image">
-                        <h3 class="project-title">Iris</h3>
-                        <span class="project-role">Aplicación Web</span>
-                        <p class="project-description">Iris es una aplicación web orientada a la visualización y administración de datos en tiempo real. Implementa un mapa interactivo que refleja el estado de entidades dinámicas y un panel administrativo para la gestión del sistema. Combina el consumo de APIs REST para operaciones síncronas con WebSockets para la actualización continua de información, asegurando una interfaz reactiva y consistente.</p>
-                        <h4 class="project-subtitle">Tecnologias: </h4>
-                        <ul class="project-tecnologies">
-                            <li><img src="assets/skills/react.svg" alt="React"></li>
-                            <li><img src="assets/skills/nodejs.svg" alt="Node.js"></li>
-                            <li><img src="assets/skills/vite.svg" alt="Vite"></li>
-                            <li><img src="assets/skills/html5.svg" alt="HTML"></li>
-                            <li><img src="assets/skills/css.svg" alt="CSS"></li>
-                            <li><img src="assets/skills/javascript.svg" alt="JavaScript"></li>
-                        </ul>
-                        <div class="project-actions">
-                            <a href="https://github.com/G2CdD2025UTNFRSanFrancisco/iris" target="_blank" class="project-link">
-                                Ver repositorio
-                            </a>
-                        </div>
-                    </article>
-                    <article class="project">
-                        <img src="assets/projects/hermes.png" alt="Hermes Server" class="project-image">
-                        <h3 class="project-title">Hermes</h3>
-                        <span class="project-role">Servidor UDP</span>
-                        <p class="project-description">Hermes es un servidor UDP diseñado para la recepción y procesamiento de datos provenientes de dispositivos externos. Utiliza un protocolo binario propio optimizado para minimizar el overhead y la latencia en la comunicación. Gestiona el parseo de paquetes, validación de datos y publicación de eventos hacia sistemas de mensajería como RabbitMQ para su posterior procesamiento.</p>
-                        <h4 class="project-subtitle">Tecnologias: </h4>
-                        <ul class="project-tecnologies">
-                            <li><img src="assets/skills/golang.svg" alt="Golang"></li>
-                        </ul>
-                        <div class="project-actions">
-                            <a href="https://github.com/G2CdD2025UTNFRSanFrancisco/hermes" target="_blank" class="project-link">
-                                Ver repositorio
-                            </a>
-                        </div>
-                    </article>
-                </div>
-            </section>
-            <section class="skills">
-                <h2 id="skills">Habilidades</h2>
-                <ul>
-                    <li data-name="Java"><img src="assets/skills/java.svg" alt="Java"></li>
-                    <li data-name="Golang"><img src="assets/skills/golang.svg" alt="Golang"></li>
-                    <li data-name="HTML"><img src="assets/skills/html5.svg" alt="HTML"></li>
-                    <li data-name="CSS"><img src="assets/skills/css.svg" alt="CSS"></li>
-                    <li data-name="JavaScript"><img src="assets/skills/javascript.svg" alt="JavaScript"></li>
-                    <li data-name="React"><img src="assets/skills/react.svg" alt="React"></li>
-                    <li data-name="Vite"><img src="assets/skills/vite.svg" alt="Vite"></li>
-                    <li data-name="Node.js"><img src="assets/skills/nodejs.svg" alt="Node.js"></li>
-                    <li data-name="PostgreSQL"><img src="assets/skills/postgresql.svg" alt="PostgreSQL"></li>
-                    <li data-name="MongoDB"><img src="assets/skills/mongodb.svg" alt="MongoDB"></li>
-                    <li data-name="Docker"><img src="assets/skills/docker.svg" alt="Docker"></li>
-                    <li data-name="Git"><img src="assets/skills/git.svg" alt="Git"></li>
-                    <li data-name="JWT"><img src="assets/skills/jwt.svg" alt="JWT"></li>
-                    <li data-name="Spring"><img src="assets/skills/spring.svg" alt="Spring"></li>
-                    <!-- Duplicado -->
-                    <li data-name="Java"><img src="assets/skills/java.svg" alt="Java"></li>
-                    <li data-name="Golang"><img src="assets/skills/golang.svg" alt="Golang"></li>
-                    <li data-name="HTML"><img src="assets/skills/html5.svg" alt="HTML"></li>
-                    <li data-name="CSS"><img src="assets/skills/css.svg" alt="CSS"></li>
-                    <li data-name="JavaScript"><img src="assets/skills/javascript.svg" alt="JavaScript"></li>
-                    <li data-name="React"><img src="assets/skills/react.svg" alt="React"></li>
-                    <li data-name="Node.js"><img src="assets/skills/nodejs.svg" alt="Node.js"></li>
-                    <li data-name="PostgreSQL"><img src="assets/skills/postgresql.svg" alt="PostgreSQL"></li>
-                    <li data-name="MongoDB"><img src="assets/skills/mongodb.svg" alt="MongoDB"></li>
-                    <li data-name="Docker"><img src="assets/skills/docker.svg" alt="Docker"></li>
-                    <li data-name="Git"><img src="assets/skills/git.svg" alt="Git"></li>
-                    <li data-name="JWT"><img src="assets/skills/jwt.svg" alt="JWT"></li>
-                    <li data-name="Spring"><img src="assets/skills/spring.svg" alt="Spring"></li>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.instagram.com/nico.feno"
+                      target="_blank"
+                    >
+                      <img src="./assets/social/instagram.svg" alt="" />
+                      Instagram
+                    </a>
+                  </li>
                 </ul>
-            </section>
-            <section class="experience" id="experience">
-                <h2>Experiencia</h2>
-                <article class="experience-card">
-                    <div class="experience-layout">
-                        <div class="experience-meta">
-                            <h3>Estudiante Investigador Grupo I+D+I Calidad de Software</h3>
-                            <span class="job-duration">Agosto 2025 - Presente</span>
-                        </div>
-                        <div class="experience-content">
-                            <p>Actualmente formo parte del Grupo de Investigación, Desarrollo e Innovación (I+D+I) en Calidad de Software de la Universidad Tecnológica Nacional F.R. San Francisco. En este rol, me he especializado en el modelo de calidad definido por la familia de normas ISO 25000, participando en la redacción de historias de usuario y la definición de requisitos no funcionales. Además, he trabajado en la interacción con modelos de lenguaje (LLM) en el marco de investigaciones orientadas a determinar cuál de estas tecnologías resulta más adecuada para asistir en el proceso de redacción de requisitos de calidad de software.</p>
-                        </div>
-                    </div>
-                </article>
-                <article class="experience-card">
-                    <div class="experience-layout">
-                        <div class="experience-meta">
-                            <h3>Desarrollador Full Stack Independiente</h3>
-                            <span class="job-duration">2018 - Presente</span>
-                        </div>
-                        <div class="experience-content">
-                            <p>Me desempeño como desarrollador full stack independiente, participando en diversos proyectos colaborativos y personales. Formé parte del desarrollo frontend de una aplicación de comunidades orientada al ámbito laboral y la gestión de proyectos, inspirada en plataformas como Discord y Trello, la cual alcanzó una etapa avanzada de desarrollo. Asimismo, desarrollé plugins en Java para entornos de servidores, creando funcionalidades personalizadas e integrando tecnologías como MongoDB, Redis, y Docker, proyecto que llegó a producción antes de su cierre. Además, he creado múltiples aplicaciones y sitios web, en algunos casos desarrollando tanto el frontend como el backend. Debido a la naturaleza privada de estos proyectos, no es posible compartir el código, pero en conjunto reflejan una sólida experiencia práctica en el desarrollo de software.</p>
-                        </div>
-                    </div>
-                </article>
-            </section>
-            <section id="contact" class="contact">
-                <div class="contact-card">
-                    <div class="contact-layout">
-                        <div class="contact-info">
-                            <div class="contact-inner">
-                                <h2>Contacto</h2>
-                                <p>
-                                Estoy abierto a nuevas oportunidades y colaboraciones.
-                                Si deseas contactarme, puedes hacerlo a través de los siguientes medios:
-                                </p>
-
-                                <ul class="contact-list">
-                                    <li>
-                                        <a href="https://www.linkedin.com/in/nicofeno/" target="_blank">
-                                        <img src="./assets/social/linkedin.svg" alt=""> LinkedIn
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.instagram.com/nico.feno" target="_blank">
-                                        <img src="./assets/social/instagram.svg" alt=""> Instagram
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="contact-form">
-                            <div class="contact-inner">
-                                <form action="https://formspree.io/f/xnjoyrky" method="POST">
-                                    <label for="name">
-                                        Nombre
-                                        <input type="text" id="name" name="name" required>
-                                    </label>
-                                    <label for="email">
-                                        Email
-                                        <input type="email" id="email" name="email" required>
-                                    </label>
-                                    <label for="message">
-                                        Mensaje
-                                        <textarea id="message" name="message" rows="5" required></textarea>
-                                    </label>
-                                    <button type="submit">Enviar</button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </main>
-        <footer>
-            <p>&copy; 2026 Nicolás Fenoglio. Diseñado y desarrollado por mí. Recursos de terceros utilizados bajo licencia.</p>
-            <label class="theme-toggle">
-                <input type="checkbox" id="theme-toggle">
-                <span class="icon sun"><img src="./assets/theme/sun.svg" alt="Light Theme"></span>
-                <span class="icon moon"><img src="./assets/theme/moon.svg" alt="Dark Theme"></span>
-            </label>
-        </footer>
-    </body>
+              </div>
+            </div>
+            <div class="contact-form">
+              <div class="contact-inner">
+                <form action="https://formspree.io/f/xnjoyrky" method="POST">
+                  <label for="name">
+                    Nombre
+                    <input type="text" id="name" name="name" required />
+                  </label>
+                  <label for="email">
+                    Email
+                    <input type="email" id="email" name="email" required />
+                  </label>
+                  <label for="message">
+                    Mensaje
+                    <textarea
+                      id="message"
+                      name="message"
+                      rows="5"
+                      required
+                    ></textarea>
+                  </label>
+                  <button type="submit">Enviar</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>
+        &copy; 2026 Nicolás Fenoglio. Diseñado y desarrollado por mí. Recursos
+        de terceros utilizados bajo licencia.
+      </p>
+      <label class="theme-toggle">
+        <input type="checkbox" id="theme-toggle" />
+        <span class="icon sun"
+          ><img src="./assets/theme/sun.svg" alt="Light Theme"
+        /></span>
+        <span class="icon moon"
+          ><img src="./assets/theme/moon.svg" alt="Dark Theme"
+        /></span>
+      </label>
+    </footer>
+  </body>
 </html>
